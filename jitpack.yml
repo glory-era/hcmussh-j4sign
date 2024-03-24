@@ -9,7 +9,7 @@ install:
       
       mvn install:install-file \
         -Dfile=$lib \
-        -DgroupId=com.viettel.sdk.gosignsdk \
+        -DgroupId=com.viettel.biometrics.signature \
         -DartifactId=$libName \
         -Dversion=$VERSION \
         -Dpackaging=aar \
