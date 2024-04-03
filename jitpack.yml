@@ -5,13 +5,13 @@ install:
   - |
     cd libs
     for lib in *; do
-      libName=${lib//.aar/}
+      libName=${lib//.jar/}
       
       mvn install:install-file \
         -Dfile=$lib \
-        -DgroupId=com.viettel.biometrics.signature \
+        -DgroupId=it.trento.comune.j4sign \
         -DartifactId=$libName \
         -Dversion=$VERSION \
-        -Dpackaging=aar \
+        -Dpackaging=jar \
         -DgeneratePom=true
     done
